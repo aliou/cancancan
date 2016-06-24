@@ -1,4 +1,4 @@
-require 'left_join'
+require 'cancan/model_adapters/left_join'
 
 module CanCan
   module ModelAdapters
