@@ -1,5 +1,3 @@
-require 'cancan/model_adapters/left_join'
-
 module CanCan
   module ModelAdapters
     class ActiveRecord4Adapter < AbstractAdapter
