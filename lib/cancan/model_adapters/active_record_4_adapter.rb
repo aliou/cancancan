@@ -14,7 +14,7 @@ module CanCan
       # in addition to `includes()` to force the outer join.
       def build_relation(*where_conditions)
         relation = @model_class.where(*where_conditions)
-        relation = relation.joins(ActiveRecord::Associations::JoinDependency.new(self, joins, [])) if joins.present?
+        relation = relation.left_joins(joins) if joins.present?
         relation
       end
 
